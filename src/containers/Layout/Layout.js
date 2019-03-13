@@ -7,6 +7,8 @@ import Home from './../../components/home/home';
 import NoPage from './../../components/nopage/nopage';
 import Navbar from './../../components/navbar/navbar';
 
+import classes from './Layout.module.css'
+
 class Layout extends React.Component {
     state = {
         isDark: false
@@ -21,7 +23,7 @@ class Layout extends React.Component {
 
     render() {
         return  (
-            <div>
+            <div className={classes.Layout}>
                 <Navbar />
                 NavBar should include options
                 <br />

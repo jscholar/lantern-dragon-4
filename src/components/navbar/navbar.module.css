@@ -2,12 +2,12 @@
     text-align: center;
     animation: fadeIn 1000ms;
     display: flex;
+    background-color: rgba(255, 153, 0, 0.541);
     justify-content: space-evenly;
 }
 
 .Navbar a {
     text-decoration: none;
-    color: inherit;
 }
 
 @keyframes fadeIn {
