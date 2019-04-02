@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {BrowserRouter} from 'react-router-dom';
 
-import Layout from './containers/Layout/Layout';
+import Layout from './Layout/Layout';
 
 import classes from './App.module.css'
 

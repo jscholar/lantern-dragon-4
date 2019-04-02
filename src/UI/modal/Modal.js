@@ -1,7 +1,7 @@
 import React from 'react';
-import classes from './modal.module.css';
+import classes from './Modal.module.css';
 
-import Aux from '../../../hoc/Auxilliary/Auxilliary'
+import Aux from './../../hoc/Auxilliary/Auxilliary'
 
 const modal = (props) => (
     <Aux>

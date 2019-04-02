@@ -1,7 +1,7 @@
 import React from 'react';
 import PROFILES from './Profiles';
 
-const about = () => {
+const About = () => {
     const profiles = PROFILES.map((profile) => {
         return (
             <div>
@@ -17,4 +17,4 @@ const about = () => {
     )
 }
 
-export default about;
+export default About;
