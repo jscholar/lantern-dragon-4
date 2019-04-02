@@ -1,13 +1,23 @@
 .Navbar {
-    text-align: center;
     animation: fadeIn 1000ms;
-    display: flex;
     background-color: rgba(255, 153, 0, 0.541);
+    position: fixed;
+    width: 100%;
+}
+
+.NavItems {
+    display: flex;
+    text-align: center;
     justify-content: space-evenly;
 }
 
 .Navbar a {
     text-decoration: none;
+}
+
+.SettingsIcon {
+    position: absolute;
+    right: 5px;
 }
 
 @keyframes fadeIn {

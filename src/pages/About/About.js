@@ -1,5 +1,5 @@
 import React from 'react';
-import PROFILES from './profiles';
+import PROFILES from './Profiles';
 
 const about = () => {
     const profiles = PROFILES.map((profile) => {

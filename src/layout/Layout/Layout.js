@@ -7,11 +7,13 @@ import Home from './../../components/home/home';
 import NoPage from './../../components/nopage/nopage';
 import Navbar from './../../components/navbar/navbar';
 
+import Modal from '../../components/UI/modal/Modal';
 import classes from './Layout.module.css'
 
 class Layout extends React.Component {
     state = {
-        isDark: false
+        isDark: false,
+        showSettings: false,
     }
 
     toggleTheme = () => {
@@ -21,21 +23,26 @@ class Layout extends React.Component {
         })
     }
 
+    toggleSettings = () => {
+        const newSettingsState = !this.state.showSettings;
+        this.setState({
+            showSettings: newSettingsState
+        })
+    }
+
     render() {
         return  (
             <div className={classes.Layout}>
-                <Navbar />
-                NavBar should include options
-                <br />
-                <br />
-                <br />
+                {this.state.showSettings ? <Modal hideModal={this.toggleSettings}>Settings</Modal> : null}
+                <Navbar toggleSettings={this.toggleSettings}/>
+                <div className={classes.ContentWrapper}>
                 <Switch>
                     <Route path="/gallery" exact component={Gallery}/>
                     <Route path="/about" exact component={About}/>
                     <Route path="/" exact component={Home} />
                     <Route component={NoPage} />
                 </Switch>
-                
+                </div>
             </div>
         )
     }

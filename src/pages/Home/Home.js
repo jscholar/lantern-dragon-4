@@ -1,6 +1,6 @@
 import React from 'react';
 
-const home = (props) => {
+const Home = (props) => {
     return (
         <div>
             Welcome to lantern dragon works
@@ -8,4 +8,4 @@ const home = (props) => {
     )
 }
 
-export default home;
+export default Home;
