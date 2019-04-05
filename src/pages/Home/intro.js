@@ -1,4 +1,4 @@
-const summary = `
+const intro = `
 Welcome.
 
 Lantern Dragon Works is a small collection of fictional novels inspired by Japanese visual novels and themes.
@@ -12,4 +12,4 @@ Regards, and enjoy your stay,
 A lowly member of the Lantern Dragons Works team.
 `;
 
-export default summary;
+export default intro;

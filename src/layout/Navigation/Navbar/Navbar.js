@@ -9,9 +9,9 @@ const Navbar = (props) => {
             <nav className={classes.NavItems}>
                 <NavLink to="/">Home</NavLink>
                 <NavLink to="/gallery">Gallery</NavLink>
-                <NavLink to="/about">About</NavLink>
+                <NavLink to="/Credits">Credits</NavLink>
             </nav>
-            <i onClick={props.toggleSettings} className={"fas fa-cog " + classes.SettingsIcon}/>
+
         </div>
     )
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Switch, Route} from 'react-router-dom';
 
-import About from './../pages/About/About';
+import Credits from '../pages/Credits/Credits';
 import Gallery from './../pages/Gallery/Gallery';
 import Home from './../pages/Home/Home';
 import NoPage from '../pages/Nopage/Nopage';
@@ -34,11 +34,12 @@ class Layout extends React.Component {
         return  (
             <div className={classes.Layout}>
                 <Navbar />
+
                 <div className={classes.ContentWrapper}>
                     <Switch>
                         <Route path="/library" component={Library}/>
                         <Route path="/gallery" component={Gallery}/>
-                        <Route path="/about" component={About}/>
+                        <Route path="/credits" component={Credits}/>
                         <Route path="/" exact component={Home} />
                         <Route component={NoPage} />
                     </Switch>
