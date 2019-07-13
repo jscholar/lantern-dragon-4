@@ -1,0 +1,38 @@
+.NavbarItem {
+    position: relative;
+    text-align: center;
+    font-size: 1.5em;
+    width: 200px;
+    color: rgba(255, 255, 255, 0.596);
+    transition: 500ms;
+}
+
+.active .NavbarItem,
+.NavbarItem:hover {
+    color: rgba(247, 242, 231, 0.89);
+    text-shadow: 
+    0 1px rgb(80, 70, 45),
+    0 3px rgb(0, 0, 0);
+}
+
+.Light {
+    transition: 500ms;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    border-radius: 50%;
+    top: -10px;
+    left: 50%;
+}
+
+.active .Light,
+.NavbarItem:hover > .Light {
+    background-color: white;
+    box-shadow: 
+    0 0 15px 4px rgb(255, 226, 147),
+    0 0 20px 5px rgb(255, 226, 147),
+    0 0 25px 5px rgb(255, 226, 147),
+    0 0 30px 5px rgb(255, 226, 147),
+    0 0 35px 10px rgb(255, 226, 147),
+    0 0 70px 38px rgb(255, 226, 147);
+}
