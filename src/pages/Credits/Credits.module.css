@@ -1,0 +1,27 @@
+.Credits {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Profile {
+    display: flex;
+    width: 800px;
+    margin: 30px 40px;
+    background-color: rgb(8, 0, 10);
+}
+
+.Frame {
+    padding: 10px;
+    margin: 25px;
+    background-color: rgb(168, 126, 109);
+    text-align: center;
+}
+
+.Portrait {
+    max-height: 300px;
+    max-width: 300px;
+}
+
+.Description {
+    padding: 30px;
+}
